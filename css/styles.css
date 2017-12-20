@@ -1,0 +1,49 @@
+
+html	{
+	font-family: verdana, sans-serif;
+	font-size: 11pt;
+}
+body{
+      width: 250px;
+	margin: auto;
+}
+
+.container {
+      max-height: 600px;
+      min-height: 300px;
+      width: 250px;
+      background: white;
+    }
+
+
+body > h1{
+	text-align: center;
+}
+h2{
+	color: orangered;
+	margin-bottom: 0;
+	font-size: 16pt;
+}
+
+a:link{
+	
+	color: dodgerblue;
+}
+h2+a:link{
+	
+	font-weight: bold;
+}
+h3{
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 10pt;
+}
+p{
+	margin: 0;
+}
+output h1 {
+	background-color: orangered;
+	text-indent: 5px;
+	color:white;
+	font-size: 18pt;
+}
