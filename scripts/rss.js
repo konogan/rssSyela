@@ -1,7 +1,5 @@
 'use strict';
 
-const DOMPARSER = new DOMParser().parseFromString.bind(new DOMParser());
-
 fetch('urls.json')
   .then((jsonUrlContent) => {
     jsonUrlContent
@@ -24,7 +22,7 @@ fetch('urls.json')
                 .text()
                 .then((contentXML) => {
                   try {
-                    let doc = DOMPARSER(contentXML, 'text/xml');
+                    let doc = new DOMParser().parseFromString(contentXML, 'text/xml');
 
                     let titre = document.createElement('h1');
                     titre.textContent = url.hostname;
